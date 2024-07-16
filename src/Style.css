@@ -284,7 +284,7 @@ margin-top: 100px;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
-  border-radius:10px;
+  border-radius:3px;
   transition: 0.2s;
 }
 .card button:hover{
