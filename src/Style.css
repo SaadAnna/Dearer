@@ -24,7 +24,7 @@ header #logo {
     text-transform: uppercase;
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(50 89 125 / 77%);
+    color: #32597dc4;
     cursor: pointer;
 }
 header nav ul {
@@ -169,7 +169,7 @@ right: 20px;
     transition:0.2s;
 }
 #Services div a:hover{
-    background-color: rgb(0, 116, 122);
+    background-color: #00747a;
 }
 #Our_services{
     display: flex;
@@ -180,27 +180,115 @@ right: 20px;
 }
 #Our_services .Frist_Services{
     text-align: center;
+   
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
-#Our_services .Frist_Services .IMAge{
-    background-color: #f2a341;
-    padding: 20px;
+#Our_services .Frist_Services .Image{
     border-radius: 50%;
+    width: 35%;
+    padding: 22px;
+    position: relative;
+    left: 120px;
+    
 }
 #Our_services .Frist_Services h1{
-    color: black;
+    color: #32597d;
     text-transform: uppercase;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 800;
-    margin-top: 15px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    margin-bottom: 15px;
 }
 #Our_services .Frist_Services h5{
-    color: blue;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 200;
+    color: #7A7A7A;
+    font-size: 20px;
+    text-transform: lowercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 margin-top: 15px;
+}
+#Product{
+    display: block;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+#Product div{
+    display: block;
+    margin-left: 25px;
+    text-align: center;
+}
+#Product div h1{
+    color: #f2a341;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    margin-top: 10px;
+}
+#Product div h5{
+    color:#32597dee ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+.card {
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+margin-top: 100px;
+}
+.card img{
+    width: 40%;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+.card div{
+    display: block;
+    margin-left: 25px;
+    text-align: start;
+}
+.card h1{
+    color: #f2a341;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.card .Description{
+    color: #32597deb;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+.price {
+  color: #f2a341;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #00747a;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius:10px;
+  transition: 0.2s;
+}
+.card button:hover{
+    background-color: #02585d;
 }
 @media only screen and (max-width: 1000px) {
     .hamburger {
