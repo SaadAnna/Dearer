@@ -1,0 +1,256 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    background:#f8fefe;
+}
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    background-color: transparent;
+}
+header #logo {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(50 89 125 / 77%);
+    cursor: pointer;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+   
+    border-radius: 100px;
+}
+header nav ul li a  {
+    display: inline-block;
+    color: #32597dc4;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 500;
+    font-family:  'Poppins', sans-serif;
+    margin: 0 20px;
+    padding-bottom: 3px;
+    border-bottom: 0.1px solid transparent;
+    border: 3px solid transparent;
+    transition: 0.3s;
+}
+header nav ul li a:hover, .a-color {   
+    color: #f2a341 ;
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #000000;
+}
+nav ul li .stackoVer{
+position: relative;
+right: 20px;
+}
+#Header{
+    display: block;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+#Header div{
+    display: block;
+    margin-left: 25px;
+    text-align: center;
+}
+#Header div h1{
+    color: #f2a341;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    margin-top: 10px;
+}
+#Header div h5{
+    color:#32597dee ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+#Header div a {
+    color: rgb(255, 255, 255);
+    padding: 15px 100px ;
+    border-radius: 50px;
+    background-color: #f2a341;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    position: relative;
+    top: 30px;
+    transition:0.2s;
+}
+#Header div a:hover{
+    background-color: rgb(0, 116, 122);
+}
+#Image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+#Image img{
+    text-align: center;
+    width: 85%;
+    cursor: pointer;
+    filter: brightness(100%);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+#Image img:hover{
+    filter: brightness(70%);
+}
+#Services{
+    display: block;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+#Services div{
+    display: block;
+    margin-left: 25px;
+    text-align: center;
+}
+#Services div h1{
+    color: #f2a341;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    margin-top: 10px;
+}
+#Services div h5{
+    color:#32597dee ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+#Services div a {
+    color: rgb(255, 255, 255);
+    padding: 15px 100px ;
+    border-radius: 50px;
+    background-color: #f2a341;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    position: relative;
+    top: 30px;
+    transition:0.2s;
+}
+#Services div a:hover{
+    background-color: rgb(0, 116, 122);
+}
+#Our_services{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+#Our_services .Frist_Services{
+    text-align: center;
+}
+#Our_services .Frist_Services .IMAge{
+    background-color: #f2a341;
+    padding: 20px;
+    border-radius: 50%;
+}
+#Our_services .Frist_Services h1{
+    color: black;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    margin-top: 15px;
+}
+#Our_services .Frist_Services h5{
+    color: blue;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+margin-top: 15px;
+}
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        z-index: 2;
+    }
+    .hamburger div {
+        background: rgb(0, 0, 0);
+        margin-right: 3px;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 50px;
+        height: 100%;
+        width: 100%;
+        background:black;
+        padding: 30px;
+        transition: 0.3s;
+    }
+    body{
+        overflow: scroll;
+    }
+   nav ul li .stackoVer{
+    position: relative;
+    top: 37px;
+    right: 15px;
+   }
+   nav ul li .github{
+    position: relative;
+    top: 2px;
+    left: 14px;
+   }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+        justify-content: start;
+        background-color: transparent;
+    }
+    header nav ul li{
+        justify-content: start;
+    }
+  #logo{
+    color: rgb(0, 0, 0);
+  }
+    header nav ul li a {
+        margin: 5px 0;
+        color: rgb(0, 0, 0);
+    }
+}
