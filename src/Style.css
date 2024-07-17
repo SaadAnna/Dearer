@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body {
-    background:#f8fefe;
+    background:#eaf5f5;
 }
 header {
     width: 100%;
@@ -237,30 +237,30 @@ margin-top: 15px;
     margin-top: 20px;
     text-align: center;
 }
-.card {
+.FRIST_card {
 display: flex;
 justify-content: space-between;
 align-items: center;
 text-align: center;
 margin-top: 100px;
 }
-.card img{
+.FRIST_card img{
     width: 40%;
     border-radius: 5px;
     margin-right: 25px;
 }
-.card div{
+.FRIST_card div{
     display: block;
     margin-left: 25px;
     text-align: start;
 }
-.card h1{
+.FRIST_card h1{
     color: #f2a341;
     font-size: 28px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
-.card .Description{
+.FRIST_card .Description{
     color: #32597deb;
     font-size: 35px;
     font-weight: 900;
@@ -274,7 +274,7 @@ margin-top: 100px;
   margin-bottom: 20px;
 }
 
-.card button {
+.FRIST_card button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -287,8 +287,311 @@ margin-top: 100px;
   border-radius:3px;
   transition: 0.2s;
 }
-.card button:hover{
+.FRIST_card button:hover{
     background-color: #02585d;
+}
+.SECOND_card {
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+margin-top: 100px;
+}
+.SECOND_card img{
+    width: 40%;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+.SECOND_card div{
+    display: block;
+    margin-right: 25px;
+    text-align: start;
+}
+.SECOND_card h1{
+    color: #f2a341;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.SECOND_card .Description{
+    color: #32597deb;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+.price {
+  color: #f2a341;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.SECOND_card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #00747a;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius:3px;
+  transition: 0.2s;
+}
+.SECOND_card button:hover{
+    background-color: #02585d;
+}
+.THIRD_card {
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+margin-top: 100px;
+}
+.THIRD_card img{
+    width: 40%;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+.THIRD_card div{
+    display: block;
+    margin-left: 25px;
+    text-align: start;
+}
+.THIRD_card h1{
+    color: #f2a341;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.THIRD_card .Description{
+    color: #32597deb;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+.price {
+  color: #f2a341;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.THIRD_card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #00747a;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius:3px;
+  transition: 0.2s;
+}
+.THIRD_card button:hover{
+    background-color: #02585d;
+}
+#Opinion{
+        display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      margin-top: 100px;
+}
+#Opinion h1{
+     color: #f2a341;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+#Opinion h5{
+    color:#32597dee ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+#People_Opinion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#People_Opinion div{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.3m;
+}
+#People_Opinion  div:hover{
+    background-color: white;
+}
+#People_Opinion  div img{
+    width: 60px;
+    height: 60px ;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 20px;
+    max-width: none;
+}
+#People_Opinion div p{
+    color: #95adc2;
+    font-size: 18px;
+    text-transform: lowercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+margin-top: 15px;
+}
+#People_Opinion div h5{
+    color: #abb8c3;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+margin-top: 5px;
+}
+#People_Opinion div h6{
+    color: #abb8c3;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+margin-top: 5px;
+}
+#Dearer_Ads{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    margin: auto;
+    margin-top: 200px;
+    width: 95%;
+    height: 470px;
+    box-sizing: border-box;
+    background-color:#5ca9ca ;
+    border-radius: 15px;
+}
+#Dearer_Ads h5{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family:'Poppins', sans-serif;
+    font-weight: 800;
+    margin-top: 40px;
+    position: relative;
+    top: 70px;
+}
+#Dearer_Ads hr{
+    width: 7%;
+    margin-left: 45%;
+    color: white;
+    position: relative;
+    top: 100px;
+}
+#Dearer_Ads h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    font-family:'Poppins', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    top: 140px;
+}
+#Dearer_Ads a{
+    color: white;
+    background-color: #f2a341;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 20px 50px;
+    border-radius: 50px;
+    position: relative;
+    top: 200px;
+    transition: 0.3s;
+}
+#Dearer_Ads a:hover{
+    color: #f2a341;
+    background-color: white;
+}
+#Fotter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top : 100px;
+    width: 100%;
+}
+#Fotter div{
+    display: block;
+    flex-direction: column;
+    text-align: start;
+}
+#Fotter h5{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: #32597dc4;
+    margin-bottom: 100px;
+    margin-left: 25px;
+}
+#Fotter h1{
+    font-size: 27px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #32597d;  
+}
+#Fotter div a{
+    color: #32597d;
+    font-family: 'Poppins', sans-serif;
+    font-weight: inherit;
+    font-size: 17px;
+    transition: 0.2s all linear;
+}
+#Fotter div a:hover{
+    color: #f2a341;
+}
+#Fotter #Contact{
+    margin-right: 50px;
+}
+#FoTTER_Description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    margin-top: 200px;
+    padding-top: 40px;
+    border-top: 0.1px rgb(224, 224, 224) solid;
+}
+#FoTTER_Description h1{
+    margin-left: 25px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgb(17 19 20 / 77%);
+    font-weight: inherit;
+    font-family:'Poppins', sans-serif ;
+}
+#FoTTER_Description  .Name{
+    margin-right: 25px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgb(17 19 20 / 77%);
+    font-weight: inherit;
+    font-family:'Poppins', sans-serif ;
 }
 @media only screen and (max-width: 1000px) {
     .hamburger {
