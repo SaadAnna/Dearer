@@ -1,3 +1,4 @@
+
 import "./Style.css";
 export default function Nav(){
 return (
@@ -8,7 +9,7 @@ return (
            <nav>
                <ul>
                    <li>
-                       <a href="saad" className="a-color" >Home</a>
+                       <a href="/Header">Home</a>
                    </li>
                    <li>
                        <a href="saad">Poduct</a>

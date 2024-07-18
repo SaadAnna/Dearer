@@ -7,6 +7,10 @@
     list-style: none;
     box-sizing: border-box;
 }
+::selection{
+    background-color: #00747a;
+    color: white;
+}
 body {
     background:#eaf5f5;
 }
@@ -189,8 +193,7 @@ right: 20px;
     border-radius: 50%;
     width: 35%;
     padding: 22px;
-    position: relative;
-    left: 120px;
+   margin: auto;
     
 }
 #Our_services .Frist_Services h1{
@@ -431,7 +434,8 @@ margin-top: 100px;
     text-align: center;
     padding: 20px;
     border-radius: 5px;
-    transition: 0.3m;
+    transition: 0.3ms;
+    cursor: pointer;
 }
 #People_Opinion  div:hover{
     background-color: white;
@@ -593,7 +597,7 @@ margin-top: 5px;
     font-weight: inherit;
     font-family:'Poppins', sans-serif ;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width:1200px) {
     .hamburger {
         display: block;
         z-index: 2;
@@ -609,9 +613,10 @@ margin-top: 5px;
         top: 50px;
         height: 100%;
         width: 100%;
-        background:black;
+        background:white;
         padding: 30px;
         transition: 0.3s;
+        z-index: 1;
     }
     body{
         overflow: scroll;
@@ -642,6 +647,73 @@ margin-top: 5px;
   }
     header nav ul li a {
         margin: 5px 0;
-        color: rgb(0, 0, 0);
+        color:#00747a;
+        transition: 0.2s all linear;
+    }
+    header nav ul li a:hover{
+        color: #f2a341;
+    }
+    #Our_services{
+        display: block;
+        text-align: center;
+    }
+    #Our_services .Frist_Services .Image{
+      margin: auto;
+    }
+    .FRIST_card{
+        flex-direction: column;
+    }
+    .FRIST_card img{
+      margin-top: 90px;
+      width: 70%;
+      margin-left: 25px; 
+    }
+    .SECOND_card{
+        flex-direction: column;
+    }
+    .SECOND_card div{
+       margin-left: 25px;
+       margin-top: 80px;
+    }
+    .SECOND_card img{
+      margin-top: 90px;
+      width: 70%;
+      margin-right: 25px; 
+    }
+    .THIRD_card{
+        flex-direction: column;
+    }
+    .THIRD_card img{
+      margin-top: 90px;
+      width: 70%;
+      margin-left: 25px; 
+    }
+    #People_Opinion{
+        display: block;
+    }
+    #Dearer_Ads{
+        height: 700px;
+    }
+    #Fotter{
+        display: block;
+    }
+    #Fotter div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin: auto;
+    }
+    #Fotter h5{
+        margin-right: 25px;
+    }
+    #Fotter #Contact{
+        margin-left: 50px;
+    }
+    #FoTTER_Description{
+        display: block;
+    }
+    #FoTTER_Description .Name{
+        margin-left: 70px;
     }
 }
