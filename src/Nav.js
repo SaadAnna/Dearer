@@ -1,7 +1,8 @@
-
+import { Link } from "react-router-dom";
 import "./Style.css";
+
 export default function Nav(){
-return (
+return ( 
     <div>
       <header>
         <a href="saad" id="logo">dearer</a>
@@ -9,10 +10,10 @@ return (
            <nav>
                <ul>
                    <li>
-                       <a href="/Header">Home</a>
+                   <Link to="/Foter">Home</Link> 
                    </li>
                    <li>
-                       <a href="saad">Poduct</a>
+                   <Link to="/Header">Home</Link> 
                    </li>
                    <li>
                        <a href="saad" class="">Contact Us</a>
