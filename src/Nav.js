@@ -10,16 +10,16 @@ return (
            <nav>
                <ul>
                    <li>
-                   <Link to="/Foter">Home</Link> 
+                   <Link to="/Home">Home</Link> 
                    </li>
                    <li>
-                   <Link to="/Header">Home</Link> 
+                   <Link to="/Product">Product</Link> 
                    </li>
                    <li>
-                       <a href="saad" class="">Contact Us</a>
+                   <Link to="/Contact">Contact Us</Link> 
                    </li>
                    <li>
-                       <a href="about-page.html">About Us</a>
+                   <Link to="/About">About Us</Link> 
                    </li>
                    <li>
                        <a href="about-page.html">Blog</a>

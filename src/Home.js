@@ -8,6 +8,7 @@ import ImageProductTHREE from "./pexels-jansel-ferma-306295-2315303.jpg"
 import OpinionOne from "./women_face_one.png"
 import OpinionTwo from "./women_face_two.png"
 import OpinionThree from "./mane_face.png"
+import { Link } from "react-router-dom";
 import "./Style.css";
  export default function Header(){
    return (
@@ -20,9 +21,7 @@ import "./Style.css";
  <h5>
  Buy Everything You Need <br/>  In The World Of Clothing <br/>  From One Place.
  </h5>
- <a href="saad">
-   Shop
- </a>
+ <Link to="/Product">Shop</Link>
  </div>
 
  
@@ -44,9 +43,7 @@ import "./Style.css";
          Clothing You Choose <br/>
 Contact Us For More.
      </h5>
-     <a href="saad">
-       shop
-     </a>
+     <Link to="/Product">Shop</Link>
      </div>
     </div>
       <div id="Our_services">
@@ -110,7 +107,7 @@ Contact Us For More.
     <br/> And Family Gatherings.</p>
   <p className="price">$129.99</p>
 
-  <p><button>Add To Cart</button></p>
+ <Link to="/Product">buy now</Link>
   </div>
    <img src={IMageProduct}></img>
 </div>
@@ -127,7 +124,7 @@ Contact Us For More.
       Alone Or With Short Pants.</p>
   <p className="price">$259.99</p>
 
-  <p><button>Add To Cart</button></p>
+ <Link to="/Product">buy now</Link>
   </div>
    
 </div>
@@ -144,7 +141,7 @@ Contact Us For More.
      For Summer And Spring.</p>
   <p className="price">$79.98</p>
 
-  <p><button>Add To Cart</button></p>
+ <Link to="/Product">buy now</Link>
   </div>
    <img src={ImageProductTHREE}></img>
 </div>
@@ -231,16 +228,16 @@ Request a demo of any of our products today and <br/>
      <h1>Menu.</h1>
      <ul>
       <li>
-        <a href="##">Home</a>
+      <Link to="/Home">Home</Link>
       </li>
       <li>
-        <a href="##">Contact Us</a>
+      <Link to="/Contact">Contact US</Link>
       </li>
       <li>
-        <a href="##">About Us</a>
+      <Link to="/About">AboutUs</Link>
       </li>
       <li>
-        <a href="##">Products</a>
+      <Link to="/Product">Product</Link>
       </li>
      </ul>
      </div>
@@ -248,7 +245,7 @@ Request a demo of any of our products today and <br/>
      <h1>Quick Links.</h1>
      <ul>
       <li>
-        <a href="##">Blog</a>
+      <Link to="/Blog">Blog</Link>
       </li>
       <li>
         <a href="##">Support
@@ -285,7 +282,6 @@ Request a demo of any of our products today and <br/>
      <div id="FoTTER_Description">
      <h1>Copyright © 2024 Dearer Store | Powered by Dearer Store</h1>
      <h1 className="Name">Saad Anna 2024.</h1>
- 
      </div>
      </div>
    

@@ -276,7 +276,7 @@ margin-top: 100px;
   margin-bottom: 20px;
 }
 
-.FRIST_card button {
+.FRIST_card a {
   border: none;
   outline: 0;
   padding: 12px;
@@ -284,12 +284,13 @@ margin-top: 100px;
   background-color: #00747a;
   text-align: center;
   cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  border-radius:3px;
+  width:100;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
   transition: 0.2s;
 }
-.FRIST_card button:hover{
+.FRIST_card a:hover{
     background-color: #02585d;
 }
 .SECOND_card {
@@ -329,7 +330,7 @@ margin-top: 100px;
   margin-bottom: 20px;
 }
 
-.SECOND_card button {
+.SECOND_card a {
   border: none;
   outline: 0;
   padding: 12px;
@@ -338,11 +339,12 @@ margin-top: 100px;
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 18px;
-  border-radius:3px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
   transition: 0.2s;
 }
-.SECOND_card button:hover{
+.SECOND_card a:hover{
     background-color: #02585d;
 }
 .THIRD_card {
@@ -382,7 +384,7 @@ margin-top: 100px;
   margin-bottom: 20px;
 }
 
-.THIRD_card button {
+.THIRD_card a {
   border: none;
   outline: 0;
   padding: 12px;
@@ -390,12 +392,13 @@ margin-top: 100px;
   background-color: #00747a;
   text-align: center;
   cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-  border-radius:3px;
+  width: 90%;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
   transition: 0.2s;
 }
-.THIRD_card button:hover{
+.THIRD_card a:hover{
     background-color: #02585d;
 }
 #Opinion{
@@ -535,7 +538,7 @@ margin-top: 5px;
     align-items: center;
     text-align: center;
     position: relative;
-    top : 100px;
+    top : 250px;
     width: 100%;
 }
 #Fotter div{
@@ -576,7 +579,7 @@ margin-top: 5px;
     justify-content: space-between;
     align-items: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 280px;
     padding-top: 40px;
     border-top: 0.1px rgb(224, 224, 224) solid;
 }
@@ -595,6 +598,368 @@ margin-top: 5px;
     color: rgb(17 19 20 / 77%);
     font-weight: inherit;
     font-family:'Poppins', sans-serif ;
+}
+#product_Services{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+#product_Services h5{
+    color: #f2a341;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    margin-top: 10px;
+}
+#product_Services h1{
+    color:#32597dee ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+#product_Services h6{
+    color: #abb8c3;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+margin-top: 5px;
+}
+#image_DESCription img{
+    width: 85%;
+    border-radius: 2px;
+}
+#image_DESCription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+#PEOPLE_questionS{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 110px;
+}
+#PEOPLE_questionS h5{
+    color: #f2a341;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    margin-top: 10px;
+}
+#PEOPLE_questionS h1{
+    color:#32597dee ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+#PEOPLE_questionS h6{
+    color: #abb8c3;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+margin-top: 5px;
+}
+#PEOPLE_questionS a{
+    color: rgb(255, 255, 255);
+    padding: 15px 100px ;
+    border-radius: 50px;
+    background-color: #f2a341;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    position: relative;
+    top: 80px;
+    transition:0.2s;
+}
+#PEOPLE_questionS a:hover{
+    background-color: #00747a;
+}
+#Contact_Tiltle{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+#Contact_Tiltle h1{
+    color:  #32597d;
+    font-size: 58px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin-top: 20px;
+}
+#Contact_Tiltle h5{
+    color: #989797;
+    font-size: 100%;
+    font-weight: 200;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+#Contact_SEction{
+display:flex;
+justify-content: space-evenly;
+align-items: center;
+margin-top: 150px;
+}
+#Contact_SEction .FORM_contact{
+    width:50% ;
+
+    height:800px;
+    background-color: white;
+    border-radius: 15px;
+    padding-right: 1px;
+display: flex;
+text-align: auto;
+padding: 10px;
+flex-direction: column;
+}
+#Contact_SEction .FORM_contact h1{
+    color: black;
+    font-weight: 700;
+    font-family:  'Poppins', sans-serif;
+    font-size: 25px;
+    text-align: start;
+
+}
+#Contact_SEction .FORM_contact label{
+    color: rgb(50 89 125 / 77%);
+    font-weight: 700;
+    font-family:  'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: start;
+    margin-top: 15px;
+
+}
+#Contact_SEction .FORM_contact ::placeholder{
+ font-size: 15px;
+position: relative;
+left: 12px;
+
+}
+#Contact_SEction input{
+    width:90%;
+    background-color: transparent;
+    height: 7rem;
+    border: 0.1px solid  #e3e3e3;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+#Contact_SEction input:focus{
+border-color: #f2a341;
+}
+#Contact_SEction  textarea:focus{
+border-color: #f2a341;
+}
+#Contact_SEction textarea{
+    width:90%;
+    background-color: transparent;
+    height: 19rem;
+    border: 0.1px solid  #e3e3e3;
+    outline: none;
+    border-radius: 8px;
+   margin-top: 15px;
+   overflow-x:hidden;
+}
+#Contact_SEction button{
+    margin-top: 17px;
+    width: 90%;
+    background-color: #00696f;
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    padding:8px;
+    border-radius: 20px;
+}
+#Contact_SEction button:hover{
+background-color: #01373a;
+}
+#OUR_contact{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    margin-left: 15px;
+    margin-bottom: 80px;
+
+}
+#OUR_contact h1{
+    color: #02585d;
+    font-size: 42px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+#OUR_contact h5{
+    color: rgba(55, 99, 141, 0.879);
+    font-size:17px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family:'Poppins', sans-serif;
+    line-height: 37px;
+}
+#Our_Location{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+#Our_Location h1{
+    color: #02585d;
+    font-size: 59px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 700;
+    margin-top: 20px;
+}
+#Our_Location h5{
+    color:rgb(50 89 125 / 77%) ;
+    font-family:'Poppins', sans-serif ;
+    font-size: 20px;
+    font-weight: 400;
+}
+#Location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+#Location .LOCATION{
+    width: 90%;
+    border-radius: 10px;
+    height: 550px;
+}
+#About_Us {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+#About_Us h1{
+    color: #32597d;
+    font-size: 59px;
+    font-family:'Poppins', sans-serif  ;
+    font-weight: 800;
+}
+#About_Us h5{
+    color: #95adc2;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 500;
+}
+#Our_Team{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+#Our_Team img{
+    width: 40%;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+#Our_Team div{
+    display: block;
+    gap: 40px;
+}
+#Our_Team h5{
+    color: #00747a;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: 500;
+    text-align: start;
+    margin-top: 20px;
+}
+#Our_Team a{
+    color: white;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: 500;
+    position: relative;
+    top: 30px;
+    right: 231px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #02585d;
+    transition: all linear 0.2s;
+}
+#Our_Team a:hover{
+background-color: #f2a341;
+}
+#Buy_now {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+#Buy_now h1{
+    color: #32597d;
+    font-size: 70px;
+    font-family:'Poppins', sans-serif  ;
+    font-weight: 800;
+}
+#Buy_now h5{
+    color: #95adc2;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+#Fag {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+#Fag h1{
+    color: #32597d;
+    font-size: 55px;
+    font-family:'Poppins', sans-serif  ;
+    font-weight: 800;
+}
+#Fag h5{
+    color: #95adc2;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+#Image_DESCRIPTION {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+#Image_DESCRIPTION img {
+    width: 80%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#Questions{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
 }
 @media only screen and (max-width:1200px) {
     .hamburger {

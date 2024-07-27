@@ -1,7 +1,8 @@
+import "./Style.css";
 export default function Error(){
     return (
     <div>
-    error in this page
+        saad anna is the best
     </div>
 )
 }
