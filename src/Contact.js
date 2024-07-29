@@ -1,12 +1,16 @@
 import "./Style.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 export default function Contact(){
 
   const[FormInput, SetFormInput] = useState ({ fristName:"", lastName: "", email: "", city: "",
   Message: "",}); 
 return (
     <div>
+       <Helmet>
+        <title>Contact | Dearer Store</title>
+      </Helmet>
      <div id="Contact_Tiltle">  
  <h1>
    Contact Us.
@@ -175,39 +179,17 @@ function SENdMessage(){
   const Message = document.getElementById("Message");
   const SendMessage = document.getElementById("SENDmessage");
   if(NAME.value === ''){
-    SendMessage.innerHTML = `TRY AGAIN`;
-    SendMessage.style.backgroundColor = '#830000';
-     setTimeout(function(){
-      window.location.reload();
-   }, 1000);
-
+   NAME.style.borderColor = "red";
   }else if(LastNAME.value === ''){
-    SendMessage.innerHTML = `TRY AGAIN`;
-    SendMessage.style.backgroundColor = '#830000';
-     setTimeout(function(){
-      window.location.reload();
-   }, 1000);
-
+   LastNAME.style.borderColor = "red";
   }else if(City.value === ''){
-    SendMessage.innerHTML = `TRY AGAIN`;
-    SendMessage.style.backgroundColor = '#830000';
-     setTimeout(function(){
-      window.location.reload();
-   }, 1000);
+   City.style.borderColor = "red";
 
   }else if(Email.value === ''){
-    SendMessage.innerHTML = `TRY AGAIN`;
-    SendMessage.style.backgroundColor = '#830000';
-     setTimeout(function(){
-      window.location.reload();
-   }, 1000);
+Email.style.borderColor = "red";
   
   }else if(Message.value === ''){
-    SendMessage.innerHTML = `TRY AGAIN`;
-    SendMessage.style.backgroundColor = '#830000';
-     setTimeout(function(){
-      window.location.reload();
-   }, 1000);
+ Message.style.borderColor = "red";
   }
   else{
     SendMessage.style.backgroundColor = "#005719 "

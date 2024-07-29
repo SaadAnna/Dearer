@@ -2,9 +2,16 @@ import "./Style.css";
 import { Link } from "react-router-dom";
 import ImageTeam from './pexels-shvetsa-5324897.jpg';
 import ImageDescription from './pexels-yankrukov-7693152.jpg';
+import { useState } from "react";
+import validator from "validator";
+import { Helmet } from "react-helmet";
  export default function About(){
+      const [email, setEmail] = useState("");
     return (
         <div>
+             <Helmet>
+        <title>About | Dearer Store</title>
+      </Helmet>
        <div id="About_Us">
          <h1>About Us!</h1> 
          <h5>Get To Know Us More And  
@@ -58,13 +65,14 @@ import ImageDescription from './pexels-yankrukov-7693152.jpg';
        <img src={ImageDescription}></img>
        </div>
        <div id="Fag">
-         <h1>People's questions?</h1> 
+         <h1>Get To Know Us!</h1>  
          <h5>
-         Frequently Asked Questions About Us <br/>And Our Service.</h5> 
+        Get To Know Us More By Sending Your<br/> Email Now.</h5> 
        </div>
-       <div id="Questions">
-
-       </div>
+       <div id="Your_Email">
+       <input placeholder="Your Email" id="InputEmail" type = "email" value = {email} onChange = {handleEmail} />
+       <button id="Send" onClick={SendEmail}> send</button>
+     </div>
 
        <div id="Fotter">
      <h5 href="saad">dearer</h5>
@@ -129,5 +137,33 @@ import ImageDescription from './pexels-yankrukov-7693152.jpg';
      </div>
      </div>
     )
-    
+   
+ 
+
+    function handleEmail(event) {
+     const EmailInput = document.getElementById("InputEmail")
+        let new_Email = event.target.value;
+        setEmail(new_Email);
+        if (!validator.isEmail(new_Email)) {
+        EmailInput.style.borderColor = "red";
+        } else {
+         EmailInput.style.borderColor = '#cbcfd2';
+        }
+    }
+    function SendEmail(){
+        const EmailInput = document.getElementById("InputEmail")
+        if(EmailInput.value === ""){
+           EmailInput.style.borderColor = "red";
+        }
+        else if(EmailInput.value.length <= 5 ){
+         EmailInput.style.borderColor = "red"
+         EmailInput.value = '';
+        }
+        else{
+        EmailInput.value = "";
+        EmailInput.style.borderColor = "green";
+        }
+    }
+   
 }
+

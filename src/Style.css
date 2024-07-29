@@ -954,13 +954,68 @@ background-color: #f2a341;
     border-radius: 5px;
     cursor: pointer;
 }
-#Questions{
-    display: block;
+#Your_Email{
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 100px;
+    gap: 5px;
 }
+#Your_Email input{
+    width: 40%;
+    border: 0.1px #cbcfd2 solid;
+    outline: none;
+    padding-left: 15px;
+    height: 50px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    caret-color: #576167 ;
+}
+#Your_Email input::placeholder{
+    position: relative;
+    left: 1px;
+    font-family:'Poppins', sans-serif ;
+}
+#Your_Email #Send{
+    height: 50px;
+    background-color: #00747a;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+    color: white;
+    font-weight: 700;
+    width: 10%;
+    transition: 0.2s;
+}
+#Your_Email #Send:hover{
+    background-color:#00383b ;
+}
+#error_Section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+#error_Section img{
+    width: 50%;
+}
+#error_Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+#error_Title h1{
+    font-size: 30px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 800;
+    margin-top: 10px;
+    color: #00696f;
+}
+
 @media only screen and (max-width:1200px) {
     .hamburger {
         display: block;

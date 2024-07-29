@@ -1,4 +1,5 @@
 import "./Style.css";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import IMageProducTS from './pexels-athena-2043590.jpg'
 import MYIMAGE from './pexels-mr-kafui-123879211-15208984.jpg'
@@ -7,6 +8,9 @@ import  IMAGEpRODUCTSTHRE from './pexels-wesleydavi-3622614.jpg'
 export default function Product(){
     return ( 
     <div>
+       <Helmet>
+        <title>Proucts | Dearer Store</title>
+      </Helmet>
      <div id="product_Services">
      <h5>Products</h5>
      <h1>
@@ -57,10 +61,10 @@ export default function Product(){
      Also Be Worn Outside.
   </p>
   <p className="price">$189.98</p>
-
+ <img src={IMAGEpRODUCTSTHRE}></img>
   <a href="Dearer">add to cart</a>
   </div>
-   <img src={IMAGEpRODUCTSTHRE}></img>
+  
 </div>
 <div id="PEOPLE_questionS">
      <h5>Why US?</h5>

@@ -9,10 +9,14 @@ import OpinionOne from "./women_face_one.png"
 import OpinionTwo from "./women_face_two.png"
 import OpinionThree from "./mane_face.png"
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet"
 import "./Style.css";
  export default function Header(){
    return (
      <div>
+       <Helmet>
+        <title>Home | Dearer Store</title>
+      </Helmet>
 <div id="Header">
  <div>  
  <h1>
