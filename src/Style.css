@@ -1015,14 +1015,176 @@ background-color: #f2a341;
     margin-top: 10px;
     color: #00696f;
 }
+#Blog_Section{
+    display: block;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+#Blog_Section div{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+   
+    margin-bottom: 110px;
+}
+#Blog_Section .BuutOn{
+ display: flex;
+ justify-content: center;
+  align-items: center;
+  text-align: center;
+   margin-top: 17px;
+   gap: 20px    ;  
+}
+#Blog_Section h1{
+    color:#32597dee ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+#Blog_Section  p{
+    color: #989797;
+    font-size: 19px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 400;
+    margin-top: 14px;
+}
+#Blog_Section .BuutOn .LEarn{
+    color: rgb(255, 255, 255);
+    padding: 15px 70px ;
+    border-radius: 50px;
+    background-color: #f2a341;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    position: relative;
+    top: 15px;
+    transition:0.2s;
+}
+#Blog_Section .BuutOn .LEarn:hover{
+    background-color: #00696f;
+}
+#ImagaDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+#ImagaDescription img{
+    width: 50%;
+    border-radius: 5px;
+    
+}
+#dearer_Fag {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 185px;
+}
+#dearer_Fag h1{
+    color: #00696f;
+    font-size: 45px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 800;
+}
+#dearer_Fag span{
+    color: #989797;
+    font-size: 17px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 700;
+    position: relative;
+    top: 42px;
+}
+#Blog {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 40px;
 
+}
+#Blog h1{
+    color: #00696f;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: start;
+}
+#Blog p{
+    color: #989797;
+    font-size:19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: start;
+}
+#Sent_MEssage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+#Sent_MEssage h1{
+    color: #00747a;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+     padding-top: 70px;
+    border-top: 0.1px solid #c1bfbf;
+}
+#Your_MEssage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    gap: 5px;
+}
+#Your_MEssage input{
+    width: 40%;
+    border: 0.1px #cbcfd2 solid;
+    outline: none;
+    padding-left: 15px;
+    height: 50px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    caret-color: #576167 ;
+}
+#Your_MEssage input::placeholder{
+    position: relative;
+    left: 1px;
+    font-family:'Poppins', sans-serif ;
+}
+#Your_MEssage button{
+    height: 50px;
+    background-color: #f2a341;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+    color: white;
+    font-weight: 700;
+    width: 10%;
+    transition: 0.2s;
+}
+#Your_MEssage button:hover{
+    background-color:#f2a241d6 ;
+}
 @media only screen and (max-width:1200px) {
     .hamburger {
         display: block;
         z-index: 2;
     }
     .hamburger div {
-        background: rgb(0, 0, 0);
+        background: #00696f;
         margin-right: 3px;
     }
     header nav {
@@ -1080,12 +1242,14 @@ background-color: #f2a341;
       margin: auto;
     }
     .FRIST_card{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .FRIST_card img{
-      margin-top: 90px;
       width: 70%;
       margin-left: 25px; 
+    }
+    .FRIST_card div{
+        margin-top: 50px;
     }
     .SECOND_card{
         flex-direction: column;
@@ -1100,12 +1264,17 @@ background-color: #f2a341;
       margin-right: 25px; 
     }
     .THIRD_card{
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .THIRD_card div{
+        margin-top: 100px;
     }
     .THIRD_card img{
-      margin-top: 90px;
       width: 70%;
       margin-left: 25px; 
+    }
+    .THIRD_card a{
+        position: inherit;
     }
     #People_Opinion{
         display: block;
@@ -1134,5 +1303,46 @@ background-color: #f2a341;
     }
     #FoTTER_Description .Name{
         margin-left: 70px;
+    }
+    #Contact_SEction{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 100px;
+    }
+    #Contact_SEction .FORM_contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 870px;
+    }
+    #Our_Team{
+        display: block;
+        margin-top: 80px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 15px;
+    }
+    #Our_Team img{
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #Your_Email input{
+        width: 70%;
+    }
+    #Your_Email #Send{
+        width: 18%;
+    }
+    #Your_MEssage input{
+        width: 70%;
+    }
+    #Your_MEssage button{
+        width: 18%;
     }
 }

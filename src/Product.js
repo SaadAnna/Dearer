@@ -61,10 +61,10 @@ export default function Product(){
      Also Be Worn Outside.
   </p>
   <p className="price">$189.98</p>
- <img src={IMAGEpRODUCTSTHRE}></img>
+
   <a href="Dearer">add to cart</a>
   </div>
-  
+   <img src={IMAGEpRODUCTSTHRE}></img>
 </div>
 <div id="PEOPLE_questionS">
      <h5>Why US?</h5>

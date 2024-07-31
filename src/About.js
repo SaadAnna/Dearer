@@ -53,7 +53,7 @@ import { Helmet } from "react-helmet";
           In Order To Contribute<br/> To Protecting 
            Our Planet For Future Generations.
               </h5> 
-              <Link to="/Contact">Contact US</Link>
+              
        </div>
        </div>
        <div id="Buy_now">

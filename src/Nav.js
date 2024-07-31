@@ -5,7 +5,7 @@ export default function Nav(){
 return ( 
     <div>
       <header>
-        <a href="saad" id="logo">dearer</a>
+      <Link to="/Home" id="logo">dearer</Link> 
            <input type="checkbox" id="nav_check" hidden />
            <nav>
                <ul>
@@ -22,7 +22,7 @@ return (
                    <Link to="/About">About Us</Link> 
                    </li>
                    <li>
-                       <a href="about-page.html">Blog</a>
+                   <Link to="/Blog">Blog</Link>
                    </li>
 
                </ul>

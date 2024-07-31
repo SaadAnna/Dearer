@@ -5,6 +5,7 @@ import Product from './Product'
 import Error from './Error';
 import Contact from './Contact';
 import About from './About';
+import Blog from './Blog';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/Product" element={<Product />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Blog" element={<Blog />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
