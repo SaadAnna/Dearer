@@ -77,7 +77,6 @@ right: 20px;
 }
 #Header div{
     display: block;
-    margin-left: 25px;
     text-align: center;
 }
 #Header div h1{
@@ -139,7 +138,6 @@ right: 20px;
 }
 #Services div{
     display: block;
-    margin-left: 25px;
     text-align: center;
 }
 #Services div h1{
@@ -176,7 +174,7 @@ right: 20px;
 }
 #Our_services{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     margin-top: 100px;
@@ -201,7 +199,6 @@ right: 20px;
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    margin-bottom: 15px;
 }
 #Our_services .Frist_Services h5{
     color: #7A7A7A;
@@ -209,7 +206,7 @@ right: 20px;
     text-transform: lowercase;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-margin-top: 15px;
+    margin-top: 15px;
 }
 #Product{
     display: block;
@@ -220,8 +217,7 @@ margin-top: 15px;
 }
 #Product div{
     display: block;
-    margin-left: 25px;
-    text-align: center;
+        text-align: center;
 }
 #Product div h1{
     color: #f2a341;
@@ -1181,39 +1177,45 @@ background-color: #f2a341;
 @media only screen and (max-width:1200px) {
     .hamburger {
         display: block;
-        z-index: 2;
     }
     .hamburger div {
         background: #00696f;
         margin-right: 3px;
     }
+    #hamburger {
+        display: block;
+        position: relative;
+        bottom: 20px;
+        cursor: pointer;
+    }
+    #hamburger .hamburger-ligne-one{
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #00696f;
+    position: relative;
+    top: 8px;
+    transform: rotate(90deg);
+    z-index: 2;
+    }
+    #hamburger .hamburger-ligne-two{
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #00696f;
+    }
+    
     header nav {
         position: absolute;
         width: 100%;
         left: -100%;
-        top: 50px;
+        top: 0px;
         height: 100%;
         width: 100%;
         background:white;
         padding: 30px;
         transition: 0.3s;
         z-index: 1;
-    }
-    body{
-        overflow: scroll;
-    }
-   nav ul li .stackoVer{
-    position: relative;
-    top: 37px;
-    right: 15px;
-   }
-   nav ul li .github{
-    position: relative;
-    top: 2px;
-    left: 14px;
-   }
-    header #nav_check:checked ~ nav {
-        left: 0;
     }
     header nav ul {
         display: block;

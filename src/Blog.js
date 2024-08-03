@@ -83,16 +83,16 @@ export default function Blog(){
      <h1>Menu.</h1>
      <ul>
       <li>
-      <Link to="/Home">Home</Link>
+      <Link to="/Home"  id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link>
       </li>
       <li>
-      
+      <Link to="/Contact" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>Contact US</Link>
       </li>
       <li>
-      <Link to="/About">AboutUs</Link>
+      <Link to="/About" id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>AboutUs</Link>
       </li>
       <li>
-      <Link to="/Product">Product</Link>
+      <Link to="/Product" id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Product</Link>
       </li>
      </ul>
      </div>
@@ -100,18 +100,18 @@ export default function Blog(){
      <h1>Quick Links.</h1>
      <ul>
       <li>
-      <Link to="/Blog">Blog</Link>
+      <Link to="/Blog" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>Blog</Link>
       </li>
       <li>
-        <a href="##">Support
+        <a href="Dearer">Support
         </a>
       </li>
       <li>
-        <a href="##">Careers
+        <a href="Dearer">Careers
 </a>
       </li>
       <li>
-        <a href="##">Privacy Policy
+        <a href="Dearer">Privacy Policy
         </a>
       </li>
      </ul>
@@ -120,15 +120,15 @@ export default function Blog(){
      <h1>Contact</h1>
      <ul>
       <li>
-        <a href="##">56 Hendford Rd, Warwickshire, BH10 5AU
+        <a href="Dearer">56 Hendford Rd, Warwickshire, BH10 5AU
         </a>
       </li>
       <li>
-        <a href="##">contact@info.com
+        <a href="Dearer">contact@info.com
         </a>
       </li>
       <li>
-        <a href="##">01202 511337
+        <a href="Dearer">01202 511337
         </a>
       </li>
      </ul>

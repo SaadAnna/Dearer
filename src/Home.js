@@ -55,35 +55,30 @@ Contact Us For More.
       <img className="Image" src={IMAGE} alt="My Image" />
       <h1>Good Cmmunication.</h1>
       <h5>
-      Lorem ipsum dolor sit amet, consectetur <br/>
-       adipiscing elit. Donec at cursus nunc <br/>
-       varius dapibus elit Nullam sem velit, efficitur <br/>
-        id ullamcorper eu, dignissim a <br/>
-         lacus. Sed fermentum.
+We Pride Ourselves On Our AbilityTo Communicate  <br/>
+ EffectivelyAnd Directly With Our Clients<br/> 
+ Paying Great Attention To Understanding.
+ 
       </h5>
       </div>
       <div className="Frist_Services">
       <img className="Image" src={myImage} alt="My Image" />
       <h1>Advertisement.
-
-      </h1>
+      </h1><br/>
       <h5>
-      Lorem ipsum dolor sit amet, consectetur <br/>
-       adipiscing elit. Donec at cursus nunc <br/>
-       varius dapibus elit Nullam sem velit, efficitur <br/>
-        id ullamcorper eu, dignissim a <br/>
-         lacus. Sed fermentum.
-      </h5>
+      We Excel In The Field Of Advertising<br/> With Our 
+       To Create Effective And Influential <br/>
+       Advertising Campaigns That Target .
+    </h5>
       </div>
       <div className="Frist_Services">
       <img className="Image" src={Image} alt="My Image" />
       <h1>Good Surveillance.</h1>
       <h5>
-      Lorem ipsum dolor sit amet, consectetur <br/>
-       adipiscing elit. Donec at cursus nunc <br/>
-       varius dapibus elit Nullam sem velit, efficitur <br/>
-        id ullamcorper eu, dignissim a <br/>
-         lacus. Sed fermentum.
+     
+We Excel In The Field Of Good Surveillance With <br/>
+ Our Ability To Provide Advanced Surveillance <br/>
+  Systems That Ensure Safety And Reliability.
       </h5>
       </div>
       </div>
@@ -232,16 +227,16 @@ Request a demo of any of our products today and <br/>
      <h1>Menu.</h1>
      <ul>
       <li>
-      <Link to="/Home">Home</Link>
+      <Link to="/Home"  id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link>
       </li>
       <li>
-      <Link to="/Contact">Contact US</Link>
+      <Link to="/Contact" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>Contact US</Link>
       </li>
       <li>
-      <Link to="/About">AboutUs</Link>
+      <Link to="/About" id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>AboutUs</Link>
       </li>
       <li>
-      <Link to="/Product">Product</Link>
+      <Link to="/Product" id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Product</Link>
       </li>
      </ul>
      </div>
@@ -249,18 +244,18 @@ Request a demo of any of our products today and <br/>
      <h1>Quick Links.</h1>
      <ul>
       <li>
-      <Link to="/Blog">Blog</Link>
+      <Link to="/Blog" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>Blog</Link>
       </li>
       <li>
-        <a href="##">Support
+        <a href="Dearer">Support
         </a>
       </li>
       <li>
-        <a href="##">Careers
+        <a href="Dearer">Careers
 </a>
       </li>
       <li>
-        <a href="##">Privacy Policy
+        <a href="Dearer">Privacy Policy
         </a>
       </li>
      </ul>
@@ -269,15 +264,15 @@ Request a demo of any of our products today and <br/>
      <h1>Contact</h1>
      <ul>
       <li>
-        <a href="##">56 Hendford Rd, Warwickshire, BH10 5AU
+        <a href="Dearer">56 Hendford Rd, Warwickshire, BH10 5AU
         </a>
       </li>
       <li>
-        <a href="##">contact@info.com
+        <a href="Dearer">contact@info.com
         </a>
       </li>
       <li>
-        <a href="##">01202 511337
+        <a href="Dearer">01202 511337
         </a>
       </li>
      </ul>
@@ -290,7 +285,7 @@ Request a demo of any of our products today and <br/>
      </div>
    
    )
-
+ 
 
 
 }
