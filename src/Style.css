@@ -57,12 +57,36 @@ header nav ul li a:hover, .a-color {
 .hamburger {
     cursor: pointer;
     display: none;
+    border-radius: 10px;
+}
+#hamburger{
+    display: none;
+    cursor: pointer;
 }
 .hamburger div {
     width: 30px;
     height: 3px;
     margin: 5px 0;
-    background: #000000;
+    border-radius: 15px;
+    background: #00696f;
+}
+.hamburger .line-one {
+    width: 20px;
+    height: 3px;
+    margin: 5px 0;
+    border-radius: 15px;
+    background: #00696f;
+}
+.hamburger .line-two {
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    border-radius: 15px;
+    background: #00696f;
+}
+.HamburgerClose{
+    width: 30px;
+    height: 30px;
 }
 nav ul li .stackoVer{
 position: relative;
@@ -1183,28 +1207,16 @@ background-color: #f2a341;
         margin-right: 3px;
     }
     #hamburger {
-        display: block;
+        display: flex;
+    }
+    #Close{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        text-align: end;
         position: relative;
         bottom: 20px;
-        cursor: pointer;
     }
-    #hamburger .hamburger-ligne-one{
-    width: 30px;
-    height: 3px;
-    margin: 5px 0;
-    background: #00696f;
-    position: relative;
-    top: 8px;
-    transform: rotate(90deg);
-    z-index: 2;
-    }
-    #hamburger .hamburger-ligne-two{
-    width: 30px;
-    height: 3px;
-    margin: 5px 0;
-    background: #00696f;
-    }
-    
     header nav {
         position: absolute;
         width: 100%;

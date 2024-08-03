@@ -77,7 +77,7 @@ export default function Product(){
           All Customers From  <br/>
            All Over The World.
      </h1>
-     <Link to="/Contact">Contact US</Link>     </div>
+     <Link to="/Contact" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Contact US</Link>     </div>
      <div id="Fotter">
      <h5 href="saad">dearer</h5>
      <div>
@@ -87,7 +87,7 @@ export default function Product(){
       <Link to="/Home"  id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link>
       </li>
       <li>
-      <Link to="/Contact" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>Contact US</Link>
+      <Link to="/Contact" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Contact US</Link>
       </li>
       <li>
       <Link to="/About" id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>AboutUs</Link>
@@ -101,7 +101,7 @@ export default function Product(){
      <h1>Quick Links.</h1>
      <ul>
       <li>
-      <Link to="/Blog" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>Blog</Link>
+      <Link to="/Blog" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Blog</Link>
       </li>
       <li>
         <a href="Dearer">Support

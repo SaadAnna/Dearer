@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import BlogImage from './pexels-pixabay-458381.jpg';
 import { Link } from "react-router-dom";
 import "./Style.css"
+import About from "./About";
 export default function Blog(){
    return (
     <div>
@@ -22,7 +23,7 @@ export default function Blog(){
           In The Field
         </p>
           <div className="BuutOn">
-        <a href="sa"  className="LEarn">Learn More</a  >
+        <Link to="/About" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}  className="LEarn">Learn More</Link  >
       </div>
       </div>
           <div id="dearer_Fag">
@@ -86,7 +87,7 @@ export default function Blog(){
       <Link to="/Home"  id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link>
       </li>
       <li>
-      <Link to="/Contact" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>Contact US</Link>
+      <Link to="/Contact" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Contact US</Link>
       </li>
       <li>
       <Link to="/About" id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>AboutUs</Link>
@@ -100,7 +101,7 @@ export default function Blog(){
      <h1>Quick Links.</h1>
      <ul>
       <li>
-      <Link to="/Blog" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>Blog</Link>
+      <Link to="/Blog" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Blog</Link>
       </li>
       <li>
         <a href="Dearer">Support
