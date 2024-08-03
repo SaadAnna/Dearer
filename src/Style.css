@@ -88,10 +88,6 @@ header nav ul li a:hover, .a-color {
     width: 30px;
     height: 30px;
 }
-nav ul li .stackoVer{
-position: relative;
-right: 20px;
-}
 #Header{
     display: block;
     justify-content:center;
@@ -1237,9 +1233,6 @@ background-color: #f2a341;
     header nav ul li{
         justify-content: start;
     }
-  #logo{
-    color: rgb(0, 0, 0);
-  }
     header nav ul li a {
         margin: 5px 0;
         color:#00747a;
@@ -1359,4 +1352,85 @@ background-color: #f2a341;
     #Your_MEssage button{
         width: 18%;
     }
+}
+@media only screen and (min-width:2400px){
+    header {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 35px;
+        background-color: transparent;
+    }
+    header #logo {
+        font-size: 28px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        color: #32597dc4;
+        cursor: pointer;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+       
+        border-radius: 100px;
+    }
+    header nav ul li a  {
+        display: inline-block;
+        color: #32597dc4;
+        padding: 5px 0;
+        font-size: 18px;
+        font-weight: 500;
+        font-family:  'Poppins', sans-serif;
+        margin: 0 20px;
+        padding-bottom: 3px;
+        border-bottom: 0.1px solid transparent;
+        border: 3px solid transparent;
+        transition: 0.3s;
+    }
+    header nav ul li a:hover, .a-color {   
+        color: #f2a341 ;
+    }
+    .hamburger {
+        cursor: pointer;
+        display: none;
+        border-radius: 10px;
+    }
+    #hamburger{
+        display: none;
+        cursor: pointer;
+    }
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        margin: 5px 0;
+        border-radius: 15px;
+        background: #00696f;
+    }
+    .hamburger .line-one {
+        width: 20px;
+        height: 3px;
+        margin: 5px 0;
+        border-radius: 15px;
+        background: #00696f;
+    }
+    .hamburger .line-two {
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        border-radius: 15px;
+        background: #00696f;
+    }
+    .HamburgerClose{
+        width: 30px;
+        height: 30px;
+    }
+    .FRIST_card img{
+        width: 80%;
+        margin-left: 25px; 
+      }
 }
