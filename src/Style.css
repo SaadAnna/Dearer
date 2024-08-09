@@ -12,7 +12,7 @@
 }
 body {
     background:#ffffff;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 header {
     width: 100%;
@@ -553,6 +553,7 @@ width:595px ;
 height: fit-content;
 padding: 20px;
 flex-direction: column;
+
 }
 #Form_Contact form input{
     background-color: transparent;
@@ -608,11 +609,15 @@ width: 100px;
    font-weight: 600;
    text-transform: uppercase;
    cursor: pointer;
+   outline: none;
    margin-top: 70px;
    transition: 0.3ms;
 }
+#Form_Contact form .SendMeSSge a:hover{
+    background-color: #00696f;
+}
 #productDescritpion a:hover{
-    background-color: #007878;
+    background-color: #039797;
 }
 #location{
     width: 550px;
@@ -1253,10 +1258,10 @@ margin-top: 50px;
        text-align: center;
        margin-top: 20px;
        position: relative;
-        right: 190px;
+        right: 155px;
     }
     #Form_Contact form input{
-        width:  35%;
+        width:  50%;
         display: block;
         justify-content: start;
         align-items: start;
@@ -1264,7 +1269,7 @@ margin-top: 50px;
         margin-top: 40px;
     }
     #Form_Contact form textarea{
-        width:  35%;
+        width:  50%;
         display: block;
         justify-content: start;
         align-items: start;
