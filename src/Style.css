@@ -338,11 +338,11 @@ header nav ul li a:hover, .a-color {
       background-color: #f2f2f2;
 }
 #FOoter h1{
-    font-size: .700rem;
-    font-weight: 700;
-    font-family:'Poppins', sans-serif;
-    color: #6e6e6e;
-    cursor: pointer;
+    color: #878787;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.2s all linear;
 }
 #Fotter{
     display: flex;
@@ -375,20 +375,10 @@ header nav ul li a:hover, .a-color {
     color: #000000;  
 }
 #Fotter div a{
-    color: #afafaf;
+    color: #878787;
     font-family: 'Poppins', sans-serif;
-    font-weight: inherit;
-    font-size: 17px;
-    font-weight: 100;
-    transition: 0.2s all linear;
-}
-#Fotter div Span{
-    color: #afafaf;
-    font-family: 'Poppins', sans-serif;
-    font-weight: inherit;
-    font-size: 17px;
-    font-weight: 100;
-    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
     transition: 0.2s all linear;
 }
 #Fotter div a:hover{
@@ -1109,11 +1099,27 @@ header nav ul li a:hover, .a-color {
         display: block;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: start;
     }
     #Our_Product div{
         margin: auto;
         margin-top: 50px;
+    }
+    #Our_Product div img{
+        width: 90%;
+        margin: auto;
+    }
+    #Our_Product a{
+        width: 90%;
+        margin: auto;
+    }
+    #Our_Product div  h1{
+        margin: auto;
+        margin-left: 15px;
+    }
+    #Our_Product div span{
+        margin: auto;
+        margin-left: 20px;
     }
     #productDescritpion{
         display: block;
@@ -1259,7 +1265,7 @@ header nav ul li a:hover, .a-color {
         text-align: start;
     }
     #Form_Contact form span{
-        width: 400px;
+        width: 350px;
     }
     #Loaction{
         display:block;
@@ -1276,6 +1282,7 @@ header nav ul li a:hover, .a-color {
         align-items: center;
         text-align: center;
         margin-top: 50px;
+        margin: auto;
     }
     #ImagaDescription img{
         width: 70%
