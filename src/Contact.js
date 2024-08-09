@@ -1,206 +1,228 @@
 import "./Style.css";
-import { Link } from "react-router-dom";
-import { useState } from "react";
 import { Helmet } from "react-helmet";
-export default function Contact(){
-
-  const[FormInput, SetFormInput] = useState ({ fristName:"", lastName: "", email: "", city: "",
-  Message: "",}); 
-return (
+import { Link } from "react-router-dom";
+export default function Contact() {
+  return (
     <div>
-       <Helmet>
+      <Helmet>
         <title>Contact | Dearer Store</title>
       </Helmet>
-     <div id="Contact_Tiltle">  
- <h1>
-   Contact Us.
- </h1>
- <h5> <br/>
- Contact us If you Have Any Problem 
-  With Ordering Any Product <br/>
-   Or Not Having It With Us! </h5>
- </div>
- <div id="Contact_SEction">
-
-  <div id="OUR_contact">
- <h1>
- Ask For Help Now.
-  </h1>
- <h5><br/>
-
-
-We Understand That Emergency Situations Can 
- Happen At Any Moment<br/> Which Is Why We
-  Are Here To Support You And Provide 
-   The Help You Need. <br/> Our Specialized 
-    Team Is Always Ready To Answer Your
-     Inquiries And Provide <br/> You With 
-     Suitable Solutions Quickly And Efficiently.
-
-We Are Committed <br/> To ProvidingYou With 
- The Best Possible Service, And Always 
- Strive<br/> To Ensure Your Comfort And Satisfaction 
-  You Can Count On Us <br/>To Provide Support 
-   At All Times, Whether You Have A Small <br/>
-    Problem Or Need Help With <br/>
-     A More Complex Issue. <br/>Tank You!
-  </h5>
- </div> 
- <div className="FORM_contact">
-
- <h1>
-  Send Your Messsage Now!
- </h1>
- <label>
-Frist Name
- </label>
- <input type="text" placeholder="Frist Name" id="FRISTname"
- value={FormInput.fristName} onChange={(Event) => {
-  SetFormInput({...FormInput, fristName: Event.target.value})
- }}/> 
- <label>  
-Last Name
- </label> 
- <input type="text" placeholder="Last Name" id="LastName"
- value={FormInput.lastName} onChange={(Event) => {
-     SetFormInput({...FormInput, lastName: Event.target.value})
-    } }/>
- <label>
-City
- </label>
- <input type="text" placeholder="City" id="City"
- value={FormInput.city} onChange={(Event) => {
-     SetFormInput({...FormInput, city: Event.target.value})
-    } }/>
- <label>
-Email
- </label>
- <input type="email" placeholder="Email" id="Email"
- value={FormInput.email} onChange={(Event) => {
-     SetFormInput({...FormInput, email: Event.target.value})
-    } }/>
- <label>
-Message
- </label>
- <textarea placeholder="Message" id="Message"
- value={FormInput.Message} onChange={(Event) => {
-     SetFormInput({...FormInput, Message: Event.target.value})
-    } }>
-  
- </textarea>
- <button id="SENDmessage"  onClick={SENdMessage}>
-Send
- </button>
-
-  </div>
- </div>
- <div id="Our_Location">  
- <h1>
-   Our Location.
- </h1>
- <h5> <br/>
- You Can Now Buy Through Our Store <br/>
-  At Great Prices And High Quality!
-</h5>
-
- </div>
- <div id="Location">  
- <iframe className="LOCATION" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.6065149795!2d-0.4312499428033268!3d51.528607004133846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2ses!4v1721931356564!5m2!1sen!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
- </div>
- <div id="Fotter">
-     <h5 href="saad">dearer</h5>
-     <div>
-     <h1>Menu.</h1>
-     <ul>
-      <li>
-      <Link to="/Home"  id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link>
-      </li>
-      <li>
-      <Link to="/Contact" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Contact US</Link>
-      </li>
-      <li>
-      <Link to="/About" id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>AboutUs</Link>
-      </li>
-      <li>
-      <Link to="/Product" id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Product</Link>
-      </li>
-     </ul>
-     </div>
-     <div>
-     <h1>Quick Links.</h1>
-     <ul>
-      <li>
-      <Link to="/Blog" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Blog</Link>
-      </li>
-      <li>
-        <a href="Dearer">Support
-        </a>
-      </li>
-      <li>
-        <a href="Dearer">Careers
-</a>
-      </li>
-      <li>
-        <a href="Dearer">Privacy Policy
-        </a>
-      </li>
-     </ul>
-     </div>
-     <div id="Contact">
-     <h1>Contact</h1>
-     <ul>
-      <li>
-        <a href="Dearer">56 Hendford Rd, Warwickshire, BH10 5AU
-        </a>
-      </li>
-      <li>
-        <a href="Dearer">contact@info.com
-        </a>
-      </li>
-      <li>
-        <a href="Dearer">01202 511337
-        </a>
-      </li>
-     </ul>
-     </div>
-     </div>
-     <div id="FoTTER_Description">
-     <h1>Copyright © 2024 Dearer Store | Powered by Dearer Store</h1>
-     <h1 className="Name">Saad Anna 2024.</h1>
-     </div>
+      <div id="Contact_Section">
+        <h1>Get In Touch</h1>
+        <p>
+          Have a question or need assistance? Fill out the form below and we'll
+          get back <br />
+          to you as soon as possible.
+        </p>
+      </div>
+      <div id="Form_Contact">
+        <form>
+          <input
+            type="text"
+            onKeyUp={CorrectMessage}
+            id="FristNAme"
+            placeholder="Frist Name"
+          />
+          <input
+            type="text"
+            onKeyUp={CorrectMessage}
+            id="LastName"
+            placeholder="Last Name"
+          />
+          <input
+            type="email"
+            onKeyUp={CorrectMessage}
+            id="Email"
+            placeholder="Your Email"
+          />
+          <input
+            type="text"
+            onKeyUp={CorrectMessage}
+            id="City"
+            placeholder="City"
+          />
+          <textarea
+            id="Message"
+            onKeyUp={CorrectMessage}
+            placeholder="Your Message"
+          ></textarea>
+          <span id="SendMessage" onClick={MessagSend}>
+            Send Message
+          </span>
+        </form>
+      </div>
+      <div className="contact">
+        <h1>Our Location.</h1>
+        <h5>
+          At Dearer, We Value Our Customers And Are Committed <br />
+          To Providing Excellent Service. Whether You Have <br />A Question Need
+          Help With An Order, Or Want
+          <br /> To Provide Feedback We're Here For You.
+        </h5>
+        <Link
+          to="/About"
+          id="QiukLink"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          Learn More
+        </Link>
+      </div>
+      <div id="Loaction">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88064.74796248671!2d-6.682781942002941!3d34.26701210053606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7575f8a6d8643%3A0xc7050653c05e128b!2sKenitra%2C%20Morocco!5e1!3m2!1sen!2ses!4v1722856127213!5m2!1sen!2ses"
+          id="location"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div id="Fotter">
+        <h5>Dearer</h5>
+        <div>
+          <h1>Menu.</h1>
+          <ul>
+            <li>
+              <Link
+                to="/Home"
+                id="QiukLink"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/Contact"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Contact US
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/About"
+                id="QiukLink"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                AboutUs
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/Product"
+                id="QiukLink"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Product
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h1>Quick Links.</h1>
+          <ul>
+            <li>
+              <Link
+                to="/Blog"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <a href="Dearer">Support</a>
+            </li>
+            <li>
+              <a href="Dearer">Careers</a>
+            </li>
+            <li>
+              <a href="Dearer">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div id="Contact">
+          <h1>Contact</h1>
+          <ul>
+            <li>
+              <a href="Dearer">56 Hendford Rd, Warwickshire, BH10 5AU</a>
+            </li>
+            <li>
+              <a href="Dearer">dearer@gmail.com</a>
+            </li>
+            <li>
+              <a href="Dearer">01202 511337</a>
+            </li>
+            <li>
+              <a href="Dearer"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="FOoter">
+        <h1>Copyright © 2024 Dearer Store | Powered by Dearer Store</h1>
+        <h1 className="Name">Saad Anna 2024.</h1>
+      </div>
     </div>
-)
-function SENdMessage(){
-  const NAME = document.getElementById("FRISTname");
-  const LastNAME = document.getElementById("LastName");
-  const City = document.getElementById("City");
-  const Email = document.getElementById("Email");
-  const Message = document.getElementById("Message");
-  const SendMessage = document.getElementById("SENDmessage");
-  if(NAME.value === ''){
-   NAME.style.borderColor = "red";
-  }else if(LastNAME.value === ''){
-   LastNAME.style.borderColor = "red";
-  }else if(City.value === ''){
-   City.style.borderColor = "red";
-
-  }else if(Email.value === ''){
-Email.style.borderColor = "red";
-  
-  }else if(Message.value === ''){
- Message.style.borderColor = "red";
+  );
+  function MessagSend() {
+    const FristName = document.getElementById("FristNAme");
+    const LastNAme = document.getElementById("LastName");
+    const Email = document.getElementById("Email");
+    const City = document.getElementById("City");
+    const Message = document.getElementById("Message");
+    if (FristName.value === "") {
+      FristName.style.borderColor = "red";
+      LastNAme.style.borderColor = "#efefef ";
+      Email.style.borderColor = "#efefef ";
+      City.style.borderColor = "#efefef ";
+      Message.style.borderColor = "#efefef ";
+    } else if (LastNAme.value === "") {
+      LastNAme.style.borderColor = "red";
+      FristName.style.borderColor = "#efefef ";
+      Email.style.borderColor = "#efefef ";
+      City.style.borderColor = "#efefef ";
+      Message.style.borderColor = "#efefef ";
+    } else if (Email.value === "") {
+      Email.style.borderColor = "red";
+      FristName.style.borderColor = "#efefef";
+      LastNAme.style.borderColor = "#efefef";
+      City.style.borderColor = "#efefef";
+      Message.style.borderColor = "#efefef";
+    } else if (City.value === "") {
+      City.style.borderColor = "red";
+      FristName.style.borderColor = "#efefef";
+      LastNAme.style.borderColor = "#efefef";
+      Email.style.borderColor = "#efefef";
+      Message.style.borderColor = "#efefef";
+    } else if (Message.value === "") {
+      Message.style.borderColor = "red";
+      FristName.style.borderColor = "#efefef";
+      LastNAme.style.borderColor = "#efefef";
+      Email.style.borderColor = "#efefef";
+      City.style.borderColor = "#efefef";
+    } else {
+      FristName.value = "";
+      LastNAme.value = "";
+      City.value = "";
+      Email.value = "";
+      Message.value = "";
+      FristName.style.borderColor = "#efefef";
+      LastNAme.style.borderColor = "#efefef";
+      Email.style.borderColor = "#efefef";
+      City.style.borderColor = "#efefef";
+      Message.style.borderColor = "#efefef";
+    }
   }
-  else{
-    SendMessage.style.backgroundColor = "#005719 "
-    NAME.value = '';
-    LastNAME.value = '';
-    City.value = '';
-    Email.value = '';
-    Message.value = '';
-    SendMessage.innerHTML = `send Successfully!`
-    setTimeout(function(){
-      window.location.reload();
-   }, 1000);  }
-}
+  function CorrectMessage() {
+    const FristName = document.getElementById("FristNAme");
+    const LastNAme = document.getElementById("LastName");
+    const Email = document.getElementById("Email");
+    const City = document.getElementById("City");
+    const Message = document.getElementById("Message");
+    FristName.style.borderColor = "#efefef";
+    LastNAme.style.borderColor = "#efefef";
+    City.style.borderColor = "#efefef";
+    Email.style.borderColor = "#efefef";
+    Message.style.borderColor = "#efefef";
+  }
 }

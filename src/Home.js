@@ -1,291 +1,381 @@
-import MYimage from "./pexels-kseniachernaya-3965545.jpg"
-import IMAGE from "./1.png"
-import myImage from "./2.png"
-import Image from "./3.png"
-import IMageProduct from "./pexels-frendsmans-1926769.jpg"
-import ImageProductTWO from "./pexels-luizclas-170497-1848471.jpg"
-import ImageProductTHREE from "./pexels-jansel-ferma-306295-2315303.jpg"
-import OpinionOne from "./women_face_one.png"
-import OpinionTwo from "./women_face_two.png"
-import OpinionThree from "./mane_face.png"
+import MYimage from "./pexels-ron-lach-8386643.jpg";
+import ImageProductTWO from "./pexels-dom-j-7304-45982.jpg";
+import ImageProductTHREE from "./pexels-nietjuh-934070.jpg";
+import ImageProductFive from "./pexels-mnzoutfits-1598505.jpg";
+import OpinionOne from "./women_face_one.png";
+import OpinionTwo from "./women_face_two.png";
+import OpinionThree from "./mane_face.png";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
 import "./Style.css";
- export default function Header(){
-   return (
-     <div>
-       <Helmet>
+export default function Header() {
+  return (
+    <div>
+      <Helmet>
         <title>Home | Dearer Store</title>
       </Helmet>
-<div id="Header">
- <div>  
- <h1>
-    welcome!
- </h1>
- <h5>
- Buy Everything You Need <br/>  In The World Of Clothing <br/>  From One Place.
- </h5>
- <Link to="/Product" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Shop</Link>
- </div>
+      <div id="HomePage">
+        <div>
+          <h1>
+            Welcome To The Best <br /> Store In The World!
+          </h1>
+          <p>
+            Welcome To Dearer The Right Place To Buy The Best And MostWonderful
+            Clothes Shoes And Accessories Around The
+            <br /> World With High Quality And Reasonable Prices.
+          </p>
 
- 
-</div>
-<div id="Image">
-  
-<img src={MYimage} />
-</div>
-     <div id="Services">
-     <div>
-     <h1>
-     WHAT WE DO
-     </h1>
-     <h5>
-     We Are A Brand Of Casual <br/>  Clothing And Footwear 
-      With A Wonderful <br/>And Distinctive Design   
-       We Sell Clothes <br/>And We Also Print Your   
-        Design On  <br/> Any Type Of 
-         Clothing You Choose <br/>
-Contact Us For More.
-     </h5>
-     <Link to="/Product" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Shop</Link>
-     </div>
-    </div>
-      <div id="Our_services">
-      <div className="Frist_Services">
-      <img className="Image" src={IMAGE} />
-      <h1>Good Cmmunication.</h1>
-      <h5>
-We Pride Ourselves On Our AbilityTo Communicate  <br/>
- EffectivelyAnd Directly With Our Clients<br/> 
- Paying Great Attention To Understanding.
- 
-      </h5>
+          <Link
+            to="/Product"
+            aria-label="Shop Now"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            Shop Now
+          </Link>
+        </div>
+        <img src={MYimage} />
       </div>
-      <div className="Frist_Services">
-      <img className="Image" src={myImage} />
-      <h1>Advertisement.
-      </h1><br/>
-      <h5>
-      We Excel In The Field Of Advertising<br/> With Our 
-       To Create Effective And Influential <br/>
-       Advertising Campaigns That Target .
-    </h5>
+      <div id="OurProucts">
+        <h1>Our Products</h1>
       </div>
-      <div className="Frist_Services">
-      <img className="Image" src={Image} />
-      <h1>Good Surveillance.</h1>
-      <h5>
-     
-We Excel In The Field Of Good Surveillance With <br/>
- Our Ability To Provide Advanced Surveillance <br/>
-  Systems That Ensure Safety And Reliability.
-      </h5>
+      <div id="Our_Product">
+        <div>
+          <img src={ImageProductTWO} />
+          <h1>Cotton Shirt.</h1>
+          <span>$39.99</span>
+          <Link
+            to="/Product"
+            id="QiukLink"
+            aria-label="Shop Now"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            Shop Now
+          </Link>
+        </div>
+        <div>
+          <img src={ImageProductTHREE} />
+          <h1>Cold Suit.</h1>
+          <span>$80.99</span>
+          <Link
+            to="/Product"
+            id="QiukLink"
+            aria-label="Shop Now"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            Shop Now
+          </Link>
+        </div>
+        <div>
+          <img src={ImageProductFive} />
+          <h1>men cap.</h1>
+          <span>$20.99</span>
+          <Link
+            to="/Product"
+            id="QiukLink"
+            aria-label="Shop Now"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            Shop Now
+          </Link>
+        </div>
       </div>
+      <div id="ourFeatures">
+        <h1>Our Features</h1>
+        <p>We Have Many Advantages That Make Many People Prefer Us.</p>
       </div>
-      <div id="Product">
-     <div>
-     <h1>
-     our products
-     </h1>
-     <h5>
-     Some of our famous <br/>
-      and best-selling 
-       products locally and <br/>
-        internationally.
-     </h5>
-     </div>
-    </div> 
-    <div id="Our_Product">
-      <div class="FRIST_card">
-      <div>
-  <h1>White Chemise.</h1>
-  <p className="Description">A White Shirt For <br/>
-   Women From Adidas <br/>
-   Elegant And Distinctive<br/>  For Important 
-    Occasions <br/>As Well As For Outings 
-    <br/> And Family Gatherings.</p>
-  <p className="price">$129.99</p>
+      <div id="Features">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="sVGiCONTwo"
+            viewBox="0 0 24 24"
+          >
+            <path d="M15.91 13.34l2.636-4.026-.454-.406-3.673 3.099c-.675-.138-1.402.068-1.894.618-.736.823-.665 2.088.159 2.824.824.736 2.088.665 2.824-.159.492-.55.615-1.295.402-1.95zm-3.91-10.646v-2.694h4v2.694c-1.439-.243-2.592-.238-4 0zm8.851 2.064l1.407-1.407 1.414 1.414-1.321 1.321c-.462-.484-.964-.927-1.5-1.328zm-18.851 4.242h8v2h-8v-2zm-2 4h8v2h-8v-2zm3 4h7v2h-7v-2zm21-3c0 5.523-4.477 10-10 10-2.79 0-5.3-1.155-7.111-3h3.28c1.138.631 2.439 1 3.831 1 4.411 0 8-3.589 8-8s-3.589-8-8-8c-1.392 0-2.693.369-3.831 1h-3.28c1.811-1.845 4.321-3 7.111-3 5.523 0 10 4.477 10 10z" />
+          </svg>
+          <h1>The Speed.</h1>
+          <p>
+            We Have The Highest Speed In Delivering The <br /> Order All Over
+            The World.
+          </p>
+        </div>
+        <div>
+          <svg
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            stroke-linejoin="round"
+            className="sVGiCONTwo"
+            stroke-miterlimit="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m8 16h-5v4c0 .621.52 1 1 1h4zm6.6 5v-5h-5.2v5zm6.4-5h-5v5h4c.478 0 1-.379 1-1zm0-1.4v-5.2h-5v5.2zm-18-5.2v5.2h5v-5.2zm11.6 0h-5.2v5.2h5.2zm1.4-6.4v5h5v-4c0-.478-.379-1-1-1zm-8 5v-5h-4c-.62 0-1 .519-1 1v4zm6.6-5h-5.2v5h5.2z"
+              fill-rule="nonzero"
+            />
+          </svg>
+          <h1>Arrangement</h1>
+          <p>
+            All Our Stores Around The World Have An Amazing <br /> And Wonderful
+            Arrangement.
+          </p>
+        </div>
+        <div>
+          <svg
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            stroke-linejoin="round"
+            className="sVGiCONTwo"
+            stroke-miterlimit="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m11.998 2.001c5.517 0 9.997 4.48 9.997 9.997 0 5.518-4.48 9.998-9.997 9.998-5.518 0-9.998-4.48-9.998-9.998 0-5.517 4.48-9.997 9.998-9.997zm-4.496 6.028-.002-.825c0-.414-.336-.75-.75-.75s-.75.336-.75.75v3.048c0 .414.336.75.75.75h3.022c.414 0 .75-.336.75-.75s-.336-.756-.75-.756h-1.512c.808-1.205 2.182-1.998 3.74-1.998 2.483 0 4.5 2.016 4.5 4.5 0 2.483-2.017 4.5-4.5 4.5-1.956 0-3.623-1.251-4.242-2.997-.106-.299-.389-.499-.707-.499-.518 0-.88.513-.707 1.001.825 2.327 3.048 3.995 5.656 3.995 3.312 0 6-2.689 6-6 0-3.312-2.688-6-6-6-1.79 0-3.399.786-4.498 2.031z"
+              fill-rule="nonzero"
+            />
+          </svg>
+          <h1>Replay</h1>
+          <p>
+            In Our Store You Can Return Any Order You Want If <br />
+            There Is Something Wrong With It
+          </p>
+        </div>
+      </div>
+      <div id="Opinions">
+        <h1>What do customers say about Dearer?</h1>
+      </div>
+      <div id="People_Opinions">
+        <div>
+          <img src={OpinionOne} />
+          <h1>Maria Olive.</h1>
+          <div className="Star">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z" />
+            </svg>
+          </div>
+          <p>
+            "I loved my experience with Dearer! The quality of the
+            <br />
+            clothes is excellent and the designs are unique
+            <br /> Shipping was fast and the customer service
+            <br /> was very helpful. I will definitely <br />
+            buy from them again."
+          </p>
+        </div>
+        <div>
+          <img src={OpinionTwo} />
+          <h1>Sosi Lola.</h1>
+          <div className="Star">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z" />
+            </svg>
+          </div>
+          <p>
+            "The clothes were great but I had a little issue with <br />
+            the size of the pants. Fortunately, the exchange <br />
+            process was quick and easy. Overall <br />
+            I am very satisfied <br /> with the site."
+          </p>
+        </div>
+        <div>
+          <img src={OpinionThree} />
+          <h1>Jack Alex.</h1>
+          <div className="Star">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z" />
+            </svg>
+          </div>
 
- <Link to="/Product" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>buy now</Link>
-  </div>
-   <img src={IMageProduct}></img>
-</div>
+          <p>
+            "The designs were great but not all sizes were available <br />
+            The purchasing process was smooth but I wish the <br />
+            size variety was improved. Great place <br />
+            for trendy clothes. Loved the quality <br />
+            and fast service."
+          </p>
+        </div>
+      </div>
+      <div id="Fotter">
+        <h5>Dearer</h5>
+        <div>
+          <h1>Menu.</h1>
+          <ul>
+            <li>
+              <Link
+                to="/Home"
+                id="QiukLink"
+                aria-label="Home Page Link"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/Contact"
+                aria-label="Contact Page Link"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Contact US
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/About"
+                id="QiukLink"
+                aria-label="About Page Link"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                AboutUs
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/Product"
+                id="QiukLink"
+                aria-label="¨Product Page Link"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Product
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h1>Quick Links.</h1>
+          <ul>
+            <li>
+              <Link
+                to="/Blog"
+                aria-label="Blog Page Link"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <a href="##" aria-label="Support Page">Support</a>
+            </li>
+            <li>
+              <a href="##" aria-label="Careers Page">Careers</a>
+            </li>
+            <li>
+              <a href="##" aria-label="Privacy Policy">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div id="Contact">
+        <ul>
+            <li>
+              <h1
+
+              >
+                Contact
+              </h1>
+            </li>
+            <li>
+              <a href="##" aria-label="Support Page">Morooco, Kenitra 2024</a>
+            </li>
+            <li>
+              <a href="##" aria-label="Careers Page">Dearer@gmail.com</a>
+            </li>
+            <li>
+              <a href="##" aria-label="Privacy Policy">0122885898</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="FOoter">
+        <h1>Copyright © 2024 Dearer Store | Powered by Dearer Store</h1>
+        <h1 className="Name">Saad Anna 2024.</h1>
+      </div>
     </div>
-    <div id="Our_Product">
-      <div class="SECOND_card">
-      <img src={ImageProductTWO}></img>
-      <div>
-  <h1>Long Rope.</h1>
-  <p className="Description">A Long Dress For Women <br/>
-   From Zara Specially <br/>
-    Designed For Important Dates <br/>
-     And Parties. It Can Be Worn <br/>
-      Alone Or With Short Pants.</p>
-  <p className="price">$259.99</p>
-
- <Link to="/Product" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>buy now</Link>
-  </div>
-   
-</div>
-    </div>
-    <div id="Our_Product">
-      <div class="THIRD_card">
-      
-      <div>
-  <h1>Black TShirt.</h1>
-  <p className="Description">A Black Shirt For  <br/> 
-  Men Mrom Nick With <br/> 
-   A Wonderful And Luxurious <br/> 
-    Design Suitable <br/> 
-     For Summer And Spring.</p>
-  <p className="price">$79.98</p>
-
- <Link to="/Product" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>buy now</Link>
-  </div>
-   <img src={ImageProductTHREE}></img>
-</div>
-    </div>
-    <div id="Opinion">
-        <h1>
-        People's opinions about us
-             </h1>  
-              <h5>
-              <h5>
-              Some People's Opinions About The <br/>
-               High-Quality Products They Offer <br/>
-                That Are Distinct From <br/>
-                 Other Companies.
-      </h5>
-      </h5>
-    </div>
-         <div id="People_Opinion">
-         <div>
-         <p>
-         Lorem ipsum dolor sit amet, consectetur <br/>
-       adipiscing elit. Donec at cursus nunc <br/>
-       varius dapibus elit Nullam sem velit, efficitur <br/>
-        id ullamcorper eu, dignissim a <br/>
-         lacus. Sed fermentum.
-         </p>
-         <img src={OpinionOne}></img>
-         <h5>
-          Alina Jones.
-         </h5>
-         <h6>
-          England.
-         </h6>
-         </div>
-         <div>
-         <p>
-         Lorem ipsum dolor sit amet, consectetur <br/>
-       adipiscing elit. Donec at cursus nunc <br/>
-       varius dapibus elit Nullam sem velit, efficitur <br/>
-        id ullamcorper eu, dignissim a <br/>
-         lacus. Sed fermentum.
-         </p>
-         <img src={OpinionTwo}></img>
-         <h5>
-          Sofia Pena.
-         </h5>
-         <h5>
-          USA.
-         </h5>
-         </div>
-         <div>
-         <p>
-         Lorem ipsum dolor sit amet, consectetur <br/>
-       adipiscing elit. Donec at cursus nunc <br/>
-       varius dapibus elit Nullam sem velit, efficitur <br/>
-        id ullamcorper eu, dignissim a <br/>
-         lacus. Sed fermentum.
-         </p>
-         <img src={OpinionThree}></img>
-         <h5>
-          Mark Oles
-         </h5>
-         <h5>
-          China.
-         </h5>
-         </div>
-     </div>
-     <div id="Dearer_Ads">
-     <h5>
-     READY TO TAKE YOUR BUSINESS TO THE NEXT LEVEL?
-     </h5>
-     <hr/>
-     <h1>
-Request a demo of any of our products today and <br/>
- see how they can help you streamline your <br/>
-  operations & boost revenue!
-     </h1>
-     <a href="Dearer">Get Started Today!</a>
-
-     </div>
-     <div id="Fotter">
-     <h5 href="saad">dearer</h5>
-     <div>
-     <h1>Menu.</h1>
-     <ul>
-      <li>
-      <Link to="/Home"  id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link>
-      </li>
-      <li>
-      <Link to="/Contact" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Contact US</Link>
-      </li>
-      <li>
-      <Link to="/About" id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>AboutUs</Link>
-      </li>
-      <li>
-      <Link to="/Product" id="QiukLink" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Product</Link>
-      </li>
-     </ul>
-     </div>
-     <div>
-     <h1>Quick Links.</h1>
-     <ul>
-      <li>
-      <Link to="/Blog" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Blog</Link>
-      </li>
-      <li>
-        <a href="Dearer">Support
-        </a>
-      </li>
-      <li>
-        <a href="Dearer">Careers
-</a>
-      </li>
-      <li>
-        <a href="Dearer">Privacy Policy
-        </a>
-      </li>
-     </ul>
-     </div>
-     <div id="Contact">
-     <h1>Contact</h1>
-     <ul>
-      <li>
-        <a href="Dearer">56 Hendford Rd, Warwickshire, BH10 5AU
-        </a>
-      </li>
-      <li>
-        <a href="Dearer">contact@info.com
-        </a>
-      </li>
-      <li>
-        <a href="Dearer">01202 511337
-        </a>
-      </li>
-     </ul>
-     </div>
-     </div>
-     <div id="FoTTER_Description">
-     <h1>Copyright © 2024 Dearer Store | Powered by Dearer Store</h1>
-     <h1 className="Name">Saad Anna 2024.</h1>
-     </div>
-     </div>
-   
-   )
- 
-
-
+  );
 }
