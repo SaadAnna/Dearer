@@ -50,24 +50,6 @@ export default function Contact() {
             Send Message
           </span>
         </form>
-      </div>
-      <div className="contact">
-        <h1>Our Location.</h1>
-        <h5>
-          At Dearer, We Value Our Customers And Are Committed <br />
-          To Providing Excellent Service. Whether You Have <br />A Question Need
-          Help With An Order, Or Want
-          <br /> To Provide Feedback We're Here For You.
-        </h5>
-        <Link
-          to="/About"
-          id="QiukLink"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        >
-          Learn More
-        </Link>
-      </div>
-      <div id="Loaction">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88064.74796248671!2d-6.682781942002941!3d34.26701210053606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7575f8a6d8643%3A0xc7050653c05e128b!2sKenitra%2C%20Morocco!5e1!3m2!1sen!2ses!4v1722856127213!5m2!1sen!2ses"
           id="location"
@@ -76,6 +58,7 @@ export default function Contact() {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+    
       <div id="Fotter">
         <h5>Dearer</h5>
         <div>

@@ -511,25 +511,22 @@ header nav ul li a:hover, .a-color {
 }
 #Form_Contact{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    flex-direction: column;
-    width:  fit-content;
-    height: fit-content;
     background-color: white;
     border-radius: 15px;
-    margin: auto;
     margin-top: 100px;
-    padding: 15px;
 }
 #Form_Contact  form{
-    display: flex;
-    flex-direction: column;
-    width: 550px;
-    height: fit-content;
-    padding: 15px;
-    background-color: transparent;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+width:400px ;
+height: fit-content;
+padding: 20px;
+flex-direction: column;
 }
 #Form_Contact form input{
     background-color: transparent;
@@ -558,10 +555,11 @@ header nav ul li a:hover, .a-color {
     outline: none;
     border: none;
     border: 0.1px solid #cdcdcd;
-    margin-top: 40px;
     background-color: transparent;
     padding-left: 8px;
     border-radius: 4px;
+    margin: auto;
+     margin-top: 40px;
 }
 #Form_Contact form input::placeholder{
     position: relative;
@@ -586,61 +584,8 @@ header nav ul li a:hover, .a-color {
 #Form_Contact form span:hover{
     background-color:  #007878;
 }
-#Loaction{
-    display: block;
-    justify-content:center;
-    margin: auto;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 150px;
-}
- .contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 120px;
-}
- .contact h1{
-    color: #000000ee;
-    font-size: 59px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-}
- .contact h5{
-    color: #747474;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    margin-top: 10px;
-}
- .contact a{
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif ;
-    font-weight: 500;
-    color: white;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 25px;
-    background-color: #01a3a3;
-    margin-top: 20px;
-    transition: 2ms;
-}
- .contact a:hover{
-    background-color: #007878;
-}
-#Loaction{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 #location{
-    width: 700px;
+    width: 550px;
     height: 450px;
     border-radius: 4px;
     filter: brightness(59%);
@@ -1093,7 +1038,6 @@ header nav ul li a:hover, .a-color {
     margin: auto;
   } 
   #People_Opinions div {
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1265,15 +1209,18 @@ margin-top: 50px;
     #Your_MEssage button{
         width: 18%;
     }
-    #Form_Contact form{
-        margin: auto;
+    #Form_Contact{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     #Form_Contact form{
         width: 410px;
         margin: auto;
     }
     #Form_Contact form input{
-        width:  200px;
+        width:  250px;
         display: block;
         justify-content: start;
         align-items: start;
@@ -1282,7 +1229,7 @@ margin-top: 50px;
         margin-top: 40px;
     }
     #Form_Contact form textarea{
-        width:  200px;
+        width:  250px;
         display: block;
         justify-content: start;
         align-items: start;
@@ -1291,7 +1238,7 @@ margin-top: 50px;
         margin-top: 40px;
     }
     #Form_Contact form span{
-        width: 200px;
+        width: 250px;
         text-align: center;
         margin: auto;
         margin-top: 40px;
