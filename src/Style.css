@@ -1004,10 +1004,11 @@ header nav ul li a:hover, .a-color {
 @media only screen and (max-width:1200px) {
     .hamburger {
         display: block;
+         margin-left: 7px;
     }
     .hamburger div {
         background: #000000;
-        margin-right: 3px;
+       
     }
     #hamburger {
         display: flex;
@@ -1085,6 +1086,7 @@ header nav ul li a:hover, .a-color {
     align-items: center;
     text-align: center;
     gap: 15px;
+    margin: auto;
   } 
   #People_Opinions div {
    
@@ -1102,27 +1104,28 @@ header nav ul li a:hover, .a-color {
         text-align: start;
     }
     #Our_Product div{
-        display: block;
-        justify-content: start;
-        align-items: start;
-        text-align: start;
-        margin-top: 50px;
+display: block;
+justify-content: center;
+align-items: center;
+text-align: start;
+margin: auto;
+margin-top: 55px;
     }
     #Our_Product div img{
-        width: 90%;
+        width: 80%;
         margin: auto;
     }
     #Our_Product a{
-        width: 90%;
+        width: 80%;
         margin: auto;
     }
     #Our_Product div  h1{
         margin: auto;
-        margin-left: 17px;
+        margin-left: 30px;
     }
     #Our_Product div span{
         margin: auto;
-        margin-left: 20px;
+        margin-left: 35px;
     }
     #productDescritpion{
         display: block;
@@ -1258,17 +1261,20 @@ header nav ul li a:hover, .a-color {
         width: 18%;
     }
     #Form_Contact form{
+        margin: auto;
+    }
+    #Form_Contact form{
         width: 410px;
     }
     #Form_Contact form input{
-        width:  300px;
+        width:  240px;
         display: block;
         justify-content: start;
         align-items: start;
         text-align: start;
     }
     #Form_Contact form textarea{
-        width:  300px;
+        width:  240px;
         display: block;
         justify-content: start;
         align-items: start;
@@ -1277,7 +1283,7 @@ header nav ul li a:hover, .a-color {
         margin-top: 40px;
     }
     #Form_Contact form span{
-        width: 300px;
+        width: 240px;
     }
     #Loaction{
         display:block;
