@@ -27,7 +27,7 @@ header #logo {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
     color: #000000be;
     cursor: pointer;
 }
@@ -158,10 +158,11 @@ header nav ul li a:hover, .a-color {
     margin-top: 100px;
 }
 #Our_Product div{
-    display: block;  
+    display: flex;  
     justify-content: center;
     align-items: center;
-    text-align: start;
+    text-align: center;
+    flex-direction: column;
     width: 340px;
     height: fit-content;
     padding: 20px;
@@ -174,7 +175,8 @@ header nav ul li a:hover, .a-color {
     font-weight: 500;
     margin-top:auto;
     text-transform: uppercase;
-    text-align: start;
+    text-align: center;
+    margin-top: 15px;
 }
 #Our_Product div span{
     color: #1e1b1b;
@@ -184,13 +186,13 @@ header nav ul li a:hover, .a-color {
     margin-top: 15px;
 }
 #Our_Product a{
-    width: 100%;
+    width: 50%;
     height: 40px;
     color: white;
     background-color:#00bbbb ;
     border-radius: 2px;
-    padding: 10px;
-    display: flex;
+    padding: 4px 8px;
+    display: g;
     font-size: 20px;
     font-weight:700;
     justify-content: center;
@@ -204,9 +206,9 @@ header nav ul li a:hover, .a-color {
 #Our_Product a:hover{
     background-color: #007676;
 }
-#Our_Product img{
-    border-radius: 1px;
-    width: 430px;
+#Our_Product div  img{
+    border-radius:1px;
+    width: 550px;
 }
 #ourFeatures{
     display: flex;
@@ -754,11 +756,10 @@ width: 100px;
     margin-right: 250px;
 }
 #Dearer_history .dearer_Work div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-    flex-direction: column;
+   display: block;
+   justify-content: center;
+   align-items: center;
+   text-align: start;
     margin: auto;
     margin-right: 82px;
 }
