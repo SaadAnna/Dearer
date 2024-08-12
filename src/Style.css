@@ -103,7 +103,7 @@ header nav ul li a:hover, .a-color {
    margin-left: 22px;
 }
 #HomePage div h1{
-    color: black;
+    color: rgb(0, 0, 0);
     font-size:40px;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
@@ -113,7 +113,7 @@ header nav ul li a:hover, .a-color {
     font-size: 20px;
     font-family:'Poppins', sans-serif ;
     font-weight: 400;
-    margin-top: auto;
+    margin-top: 10px;
 }
 #HomePage div a{
     padding: 10px 50px 10px 50px;
@@ -124,7 +124,7 @@ header nav ul li a:hover, .a-color {
     color: white;   
     border-radius: 5px;
     position: relative;
-    top: 20px;
+    top: 25px;
     transition: 0.2ms all linear;
 }
 #HomePage div a:hover{
@@ -158,57 +158,50 @@ header nav ul li a:hover, .a-color {
     margin-top: 100px;
 }
 #Our_Product div{
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-items: center;
+    align-self: center;
+    justify-tracks: center;
     flex-direction: column;
-    width: 340px;
-    height: fit-content;
-    padding: 20px;
-    background-color: transparent;
+    gap: 15px;
+}
+#Our_Product div img{
+    width: 400px;
+    border-radius: 1px;
 }
 #Our_Product div h1{
     color: black;
     font-size: 25px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    margin-top:auto;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 15px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 700;
 }
 #Our_Product div span{
-    color: #1e1b1b;
+    color: black;
     font-size: 17px;
     font-family:'Poppins', sans-serif ;
-    font-weight: 400;
-    margin-top: 15px;
+    font-weight: 500;
 }
-#Our_Product a{
-    width: 50%;
-    height: 40px;
+#Our_Product div a{
     color: white;
-    background-color:#00bbbb ;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 5px 10px;
     border-radius: 2px;
-    padding: 4px 8px;
-    display: g;
-    font-size: 20px;
-    font-weight:700;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    top: 15px;
-    cursor: pointer;
-    transition: 0.5ms;
+    background-color: #00a0a8;
+    transition: 0.2ms;  
 }
-#Our_Product a:hover{
-    background-color: #007676;
+#Our_Product  div a:hover{
+    background-color: #007979;
 }
-#Our_Product div  img{
-    border-radius:1px;
-    width: 550px;
+#Our_Product div #JeansShop{
+   position: relative;
+   bottom:34px ;
+}
+#Our_Product div #JeansImage{
+   margin-top: 34px;
 }
 #ourFeatures{
     display: flex;
@@ -1085,31 +1078,28 @@ width: 100px;
         display: block;
         justify-content: start;
         align-items: center;
-        text-align: start;
+        text-align: center;
     }
     #Our_Product div{
-display: block;
-justify-content: start;
-align-items: start;
-text-align: start;
-margin: auto;
-margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-self: center;
+        justify-tracks: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 40px;
     }
     #Our_Product div img{
-        width: 80%;
+        width: 400px;
         margin: auto;
     }
-    #Our_Product a{
-        width: 80%;
+    #Our_Product div a{
+       padding:5px 10px;
+        position: relative;
         margin: auto;
-    }
-    #Our_Product div  h1{
-        margin: auto;
-        margin-left: 30px;
-    }
-    #Our_Product div span{
-        margin: auto;
-        margin-left: 35px;
+        text-align: center;
     }
     #productDescritpion{
         display: block;
@@ -1246,36 +1236,39 @@ margin-top: 50px;
         width: 18%;
     }
     #Form_Contact{
-        display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         flex-direction: column;
         
     }
     #Form_Contact form{
-       display: block;
-       justify-content: center;
-       align-items: center;
-       text-align: center;
-       margin-top: 20px;
-       position: relative;
-        right: 155px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: auto;
+      flex-direction: column;
+      width: 470px;
     }
     #Form_Contact form input{
-        width:  50%;
+        width:  80%;
         display: block;
         justify-content: start;
         align-items: start;
         text-align: start;
         margin-top: 40px;
+       
     }
     #Form_Contact form textarea{
-        width:  50%;
+        width:  80%;
         display: block;
         justify-content: start;
         align-items: start;
         text-align: start;
         margin-top: 40px;
+       
     }
     #Form_Contact form span{
         width: 250px;

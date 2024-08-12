@@ -147,6 +147,7 @@ export default function Contact() {
         <h1 className="Name">Saad Anna 2024.</h1>
       </div>
     </div>
+    
   );
   function MessagSend() {
     const FristName = document.getElementById("FristNAme");
@@ -160,30 +161,50 @@ export default function Contact() {
       Email.style.borderColor = "#efefef ";
       City.style.borderColor = "#efefef ";
       Message.style.borderColor = "#efefef ";
+      window.scrollTo({
+        top: 10,
+        behavior: "smooth"
+    });
     } else if (LastNAme.value === "") {
       LastNAme.style.borderColor = "red";
       FristName.style.borderColor = "#efefef ";
       Email.style.borderColor = "#efefef ";
       City.style.borderColor = "#efefef ";
       Message.style.borderColor = "#efefef ";
+      window.scrollTo({
+        top: 40,
+        behavior: "smooth"
+    });
     } else if (Email.value === "") {
       Email.style.borderColor = "red";
       FristName.style.borderColor = "#efefef";
       LastNAme.style.borderColor = "#efefef";
       City.style.borderColor = "#efefef";
       Message.style.borderColor = "#efefef";
+      window.scrollTo({
+        top:70,
+        behavior: "smooth"
+    });
     } else if (City.value === "") {
       City.style.borderColor = "red";
       FristName.style.borderColor = "#efefef";
       LastNAme.style.borderColor = "#efefef";
       Email.style.borderColor = "#efefef";
       Message.style.borderColor = "#efefef";
+      window.scrollTo({
+        top: 140,
+        behavior: "smooth"
+    });
     } else if (Message.value === "") {
       Message.style.borderColor = "red";
       FristName.style.borderColor = "#efefef";
       LastNAme.style.borderColor = "#efefef";
       Email.style.borderColor = "#efefef";
       City.style.borderColor = "#efefef";
+      window.scrollTo({
+        top:350,
+        behavior: "smooth"
+    });
     } else {
       FristName.value = "";
       LastNAme.value = "";

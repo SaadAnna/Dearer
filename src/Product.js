@@ -52,14 +52,14 @@ export default function Product() {
           </Link>
         </div>
         <div>
-          <img src={IMageProduct} />
+          <img src={IMageProduct} id="JeansImage" />
           <h1>Long jeans.</h1>
           <span>$51.99</span>
           <br />
 
           <Link
             to="/ProductThree"
-            id="QiukLink"
+            id="JeansShop"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             Shop Now
