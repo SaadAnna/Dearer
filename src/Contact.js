@@ -162,7 +162,7 @@ export default function Contact() {
       City.style.borderColor = "#efefef ";
       Message.style.borderColor = "#efefef ";
       window.scrollTo({
-        top: 10,
+        top: 8,
         behavior: "smooth"
     });
     } else if (LastNAme.value === "") {
@@ -172,7 +172,7 @@ export default function Contact() {
       City.style.borderColor = "#efefef ";
       Message.style.borderColor = "#efefef ";
       window.scrollTo({
-        top: 40,
+        top: 50,
         behavior: "smooth"
     });
     } else if (Email.value === "") {
@@ -182,7 +182,7 @@ export default function Contact() {
       City.style.borderColor = "#efefef";
       Message.style.borderColor = "#efefef";
       window.scrollTo({
-        top:70,
+        top:130,
         behavior: "smooth"
     });
     } else if (City.value === "") {
@@ -192,7 +192,7 @@ export default function Contact() {
       Email.style.borderColor = "#efefef";
       Message.style.borderColor = "#efefef";
       window.scrollTo({
-        top: 140,
+        top: 230,
         behavior: "smooth"
     });
     } else if (Message.value === "") {
@@ -202,7 +202,7 @@ export default function Contact() {
       Email.style.borderColor = "#efefef";
       City.style.borderColor = "#efefef";
       window.scrollTo({
-        top:350,
+        top:450,
         behavior: "smooth"
     });
     } else {
